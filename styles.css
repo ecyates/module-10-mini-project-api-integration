@@ -1,0 +1,96 @@
+/* To make sure the footer stays on the bottom if the page is too short */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+header {
+    flex-grow: 1;
+}
+footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+}
+
+/* Give the background images for the welcome, filter, and search pages */
+#welcome {
+    background-image: url('./images/welcome-banner-image.jpg');
+    background-size: cover; 
+    background-position: center; 
+    height: max-content;
+    display: flex;
+    color: white;
+}
+#searchTitle {
+    background-image: url('./images/search-banner-image.jpg');
+    background-size: cover; 
+    background-position: center; 
+}
+#abilityTitle {
+    background-image: url('./images/ability-banner-image.jpg');
+    background-size: cover; 
+    background-position: center; 
+}
+#generationTitle {
+    background-image: url('./images/generation-banner-image.jpg');
+    background-size: cover; 
+    background-position: center; 
+}
+#typeTitle {
+    background-image: url('./images/types-banner-image.jpg');
+    background-size: cover; 
+    background-position: center; 
+}
+#moveTitle {
+    background-image: url('./images/move-banner-image.jpg');
+    background-size: cover; 
+    background-position: center; 
+}
+
+/* Handling links outside of cards and badges */
+.link{
+    color: red;
+    text-decoration: none;
+}
+.link:hover {
+    color: blue;
+    text-decoration: underline;
+}
+.link:visited {
+    color: purple;
+    text-decoration: none;
+}
+
+/* Handling links inside of cards and badges */ 
+a {
+    text-decoration: none;
+    color:black;
+}
+
+/* Handling cards and badges with links to hove */ 
+.cardHover:hover, 
+.badgeHover:hover {
+    box-shadow: 0 5px 5px rgba(0,0,0,.3);
+    cursor:pointer;
+    text-decoration: none;
+}
+
+/* Spinning the loading spinner */ 
+.spinner {
+    width: 250px;
+    height: 250px;
+    animation: rotate 2s infinite linear;
+    background-image: url('./images/pokeball-spinner.png');
+    background-size: 250px 250px;
+}
+
+@keyframes rotate{ 
+    from {transform: rotate(0deg);} /* define the animation, from what to what*/
+    to {transform: rotate(360deg);}
+}
+
+/* Increasing Accordion Titles */ 
+.accordion-button {
+    font-size: 28px !important;
+}
