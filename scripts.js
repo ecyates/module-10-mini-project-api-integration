@@ -97,6 +97,7 @@ async function displayPokemon(pokemonURL){
         const response = await fetch(pokemonURL);
         const pokemonData = await response.json();
         // Pokemon Display includes a hyperlinked card with an image and name
+        
         let pokemonDisplay = `<div class="col-md-4">
                             <a class="cardLink" href="pokemon.html?name=${encodeURIComponent(pokemonData.name)}">
                                 <div class="card cardHover">
